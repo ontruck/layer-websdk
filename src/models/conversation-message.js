@@ -135,13 +135,13 @@ class ConversationMessage extends Message {
     // 3. The user is the sender; in that case we do care about rendering receipts from other users
     if (!this.isInitializing && oldStatus) {
       const usersStateUpdatedToRead = userHasRead && oldStatus[id] !== Constants.RECEIPT_STATE.READ;
-      if (usersStateUpdatedToRead || isSender) {
+      // if (usersStateUpdatedToRead || isSender) {
         this._triggerAsync('messages:change', {
           oldValue: oldStatus,
           newValue: status,
           property: 'recipientStatus',
         });
-      }
+      // }
     }
   }
 

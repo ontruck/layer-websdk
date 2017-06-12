@@ -11,7 +11,7 @@
     "url": "layerhq/layer-websdk"
   },
   "scripts": {
-    "prepublish": "grunt prepublish",
+    "postinstall": "$(npm bin)/grunt build",
     "test": "grunt test"
   },
   "license": "Apache-2.0",
