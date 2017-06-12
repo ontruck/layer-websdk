@@ -6,7 +6,7 @@ module.exports = {
   Syncable: require('./src/models/syncable'),
   Conversation: require('./src/models/conversation'),
   Channel: require('./src/models/channel'),
-  Container: require('./lib/models/container'),
+  Container: require('./src/models/container'),
   Message: require('./src/models/message'),
   Announcement: require('./src/models/announcement'),
   MessagePart: require('./src/models/message-part'),
